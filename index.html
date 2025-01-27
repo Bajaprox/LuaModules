@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LuaModules Setup Help</title>
+    <style>
+        body {
+            background-color: #181818; /* Smooth black background */
+            color: #fff; /* White text */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 80%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            resize: none; /* Prevent resizing */
+            background-color: #282828;
+            color: #fff;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style></head><body>
+    <h1>LuaModules Setup Help</h1>
+
+    <textarea id="codeBox" readonly>
+        -- example of LuaModules
+        local module = require()
+
+        module = ({
+          "name of",
+          "scripts": "",
+          "config": "luaconfig.json"
+        })
+    </textarea>
+
+    <button onclick="analyzeCode()">Analyze Code</button>
+
+    <script>
+        function analyzeCode() {
+            // Get the code from the textarea
+            const code = document.getElementById("codeBox").value;
+
+            // **Here you would add your LuaModules analysis logic**
+            // ... (Your existing code here) ... 
+        }
+    </script></body></html>
