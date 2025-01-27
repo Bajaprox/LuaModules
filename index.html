@@ -55,14 +55,16 @@
         })
     </textarea>
 
-    <button onclick="analyzeCode()">Analyze Code</button>
-
-    <script>
-        function analyzeCode() {
-            // Get the code from the textarea
-            const code = document.getElementById("codeBox").value;
-
-            // **Here you would add your LuaModules analysis logic**
-            // ... (Your existing code here) ... 
-        }
+        <textarea id="codeBox" readonly>
+       -- CONFIG --
+            {
+            "LuaV": "v6.2.4",
+            "LuauDebugging": true,
+            "Lua_Modding": {
+            "TFIX_modules": ["lax", "vcli33"],
+            "Loader": "this.config.lua"
+            }
+            }
+    </textarea>
+        
     </script></body></html>
